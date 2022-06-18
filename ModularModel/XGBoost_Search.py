@@ -12,10 +12,10 @@ from hyperopt.pyll import scope
 import xgboost as xgb
 
 #Simple preprocessing
-#from preprocess_simple_green import preprocess, categorical, numerical, target
+from peprocessors.preprocess_simple_green import preprocess, categorical, numerical, target
 
 #Complex preprocessing
-from preprocess_complex_green import preprocess, categorical, numerical, target
+from preprocessors.preprocess_complex_green import preprocess, categorical, numerical, target
 
 import mlflow
 

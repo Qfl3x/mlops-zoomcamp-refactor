@@ -9,7 +9,8 @@ from sklearn.linear_model import Ridge
 
 from sklearn.metrics import mean_squared_error
 
-from preprocess_simple_green import preprocess, categorical, numerical, target
+from preprocessors.preprocess_simple_green import preprocess, categorical, numerical, target
+
 
 def vectorize(train_path, val_path):
     
@@ -23,7 +24,7 @@ def vectorize(train_path, val_path):
 
     val_dicts = df_val[categorical + numerical].to_dict(orient='records')
     X_val = dv.transform(val_dicts)
-a
+
     y_train = df_train[target].values
     y_val = df_val[target].values
 
