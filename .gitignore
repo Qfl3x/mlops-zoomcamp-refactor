@@ -1,3 +1,6 @@
 #Data folder:
 data/
 __pycache__/
+
+#Vim Swap files:
+*.swp
