@@ -1,4 +1,3 @@
-COMPLEX = True
 MLFLOW_LOG = False
 
 
@@ -15,12 +14,7 @@ from hyperopt.pyll import scope
 
 import xgboost as xgb
 
-if COMPLEX:
-    #Complex preprocessing
-    from preprocessors.preprocess_complex_green import preprocess, categorical, numerical, target
-else:
-    #Simple prprocessing
-    from peprocessors.preprocess_simple_green import preprocess, categorical, numerical, target
+from preprocessors.preprocess_complex_green import preprocess, categorical, numerical, target
 
 if MLFLOW_LOG:
     import mlflow
