@@ -1,6 +1,6 @@
 Proprocessor file convention:
 
-`preprocess\_[Complex/Simple]\_[Data type: green/fhv].py`
+`preprocess_[Complex/Simple]_[Data type: green/fhv].py`
 
 \[Complex/Simple]: Type of preprocessor; Simple: Course preprocessor. Complex: Preprocessor with weekdays/weekends encoding and holidays. Requires `holidays` package.
 
